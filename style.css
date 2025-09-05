@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     padding: 50px 100px;
     margin: 0;
@@ -94,4 +95,102 @@ input:focus{
     border: 2px solid #3b0147;
     box-shadow: 0 3px 0 #3b0147;
     text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.6);
+=======
+body{
+    padding: 50px 100px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, arial, serif;
+    background: linear-gradient(to right , #d400ff , #003cff , #ff00cc  );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: gradiant 10s 2s infinite ease;
+}
+@keyframes gradiant {
+    0%{
+            background: linear-gradient(to right , #d400ff , #ff00cc , #003cff );
+    }
+    20%{
+            background: linear-gradient(to left #ff00b7 , #0099ff , #ff7700 );
+    }
+    40%{
+            background: linear-gradient( to right , #aa00ff , #0099ff , #ff7700 ); 
+    }
+    60%{
+            background: linear-gradient( to left , #ff00b7 , #ff0011 , #d000ff );
+    }
+    80%{
+            background: linear-gradient( to right , #ff7300 , #669a18 , #f51111 );
+    }
+    100%{
+            background: linear-gradient( to left , #ff00b7 , #0099ff , #ff7700 );
+    }
+}
+.inner-box{
+    gap: 10px 50px;
+    border: 2px solid rgb(250, 224, 176);
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 10px 0 rgb(250, 224, 176);
+    backdrop-filter: blur(10px);
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;      */
+    padding: 30px 110px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.inner-box h1{
+    text-align: center;
+}
+.edit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+}
+#btn:hover{
+    transform: translateX(5px);
+    transform: translatez(5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.edti{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+}
+.edt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 15px;
+}
+input{
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.543);
+
+}
+input:focus{
+    border: 2px solid #3b0147;
+    box-shadow: 0 3px 0 #3b0147;
+    text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.6);
+>>>>>>> 53033b3b03fbb1369ad8fc68bc807fe1ca5ba8ef
 }
